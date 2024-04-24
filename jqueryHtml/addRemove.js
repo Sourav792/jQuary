@@ -15,7 +15,7 @@ $(document).ready(function () {
 //   $("img").before("Some text before");
 
   function afterText() {
-    var txt1 = "<b>I </b>";                    // Create element with HTML 
+    var txt1 = "<b>I </b>"; // Create element with HTML 
     var txt2 = $("<i></i>").text("love ");     // Create with jQuery
     var txt3 = document.createElement("b");    // Create with DOM
     txt3.innerHTML = "jQuery!";
