@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .ancestors * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
+}
+    </style>
+</head>
+<body>
+  <div>
+    <h1>Traversing Up the DOM Tree</h1>
+   <p>With jQuery you can traverse up the DOM tree to find ancestors of an element.</p>
+   <p>An ancestor is a parent, grandparent, great-grandparent, and so on.</p>
+   <h4>Three useful jQuery methods for traversing up the DOM tree are:</h4>
+   <li>parent()</li>
+   <li>parents()</li>
+   <li>parentsUntil()</li>
+  </div>
+
+  <!-- <div class="ancestors">
+    <div style="width:500px;">div (great-grandparent)
+      <ul>ul (grandparent)  
+        <li>li (direct parent)
+          <span>span</span>
+        </li>
+      </ul>   
+    </div>
+  
+    <div style="width:500px;">div (grandparent)   
+      <p>p (direct parent)
+        <span>span</span>
+      </p> 
+    </div>
+  </div> -->
+  <div class="ancestors">
+    <!-- <div style="width:500px;">div (great-grandparent)
+        <ul>ul (grandparent)  
+          <li>li (direct parent)
+            <span>span</span>
+          </li>
+        </ul>   
+      </div> -->
+
+      <div style="width:500px;">div (great-grandparent)
+        <ul>ul (grandparent)  
+          <li>li (direct parent)
+            <span>span</span>
+          </li>
+        </ul>   
+      </div>
+  </div>
+
+
+    <script src="ancestors.js"></script>
+</body>
+</html>
