@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .descendants * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Traversing Down the DOM Tree</h1>
+      <p>
+        With jQuery you can traverse down the DOM tree to find descendants of an
+        element.
+      </p>
+      <p>A descendant is a child, grandchild, great-grandchild, and so on.</p>
+      <h4>Two useful jQuery methods for traversing down the DOM tree are:</h4>
+      <li>children()</li>
+      <li>find()</li>
+    </div>
+
+    <div class="descendants" style="width:500px;">div (current element) 
+        <p>p (child)
+          <span>span (grandchild)</span>   
+        </p>
+        <p>p (child)
+          <span>span (grandchild)</span>
+        </p> 
+      </div>
+    <script src="descendants.js"></script>
+  </body>
+</html>
