@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>jQuery load() Method</h1>
+        <p>The jQuery load() method is a simple, but powerful AJAX method.
+        </p>
+        <p>The load() method loads data from a server and puts the returned data into the selected element.</p>
+        <h3>$(selector).load(URL,data,callback);
+        </h3>
+        <li>The required URL parameter specifies the URL you wish to load.</li>
+        <li>The optional data parameter specifies a set of querystring key/value pairs to send along with the request.
+        </li>
+        <li>The optional callback parameter is the name of a function to be executed after the load() method is completed.</li>
+
+        <p>The optional callback parameter specifies a callback function to run when the load() method is completed. The callback function can have different parameters:</p>
+
+        <li>responseTxt - contains the resulting content if the call succeeds</li>
+        <li>statusTxt - contains the status of the call</li>
+        <li>xhr - contains the XMLHttpRequest object
+        </li>
+    </div>
+  <div id="div1" style="margin: 50px;"></div>
+    <button>click me!</button>
+
+    <div id="div2"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button id="btn">Get External Content</button>
+    <script src="loadMethod.js"></script>
+</body>
+</html>
